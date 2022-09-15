@@ -37,7 +37,8 @@ class Bird {
             (this.game.input.keys.indexOf(" ") !== -1 ||
                 this.game.input.keys.indexOf("ArrowUp") !== -1 ||
                 this.game.input.keys.indexOf("w") !== -1 ||
-                this.game.input.keys.indexOf("Click") !== -1) &&
+                this.game.input.keys.indexOf("Click") !== -1 ||
+                this.game.input.keys.indexOf("Touch") !== -1) &&
             this.game.gameStart
         ) {
             this.vy = -10;

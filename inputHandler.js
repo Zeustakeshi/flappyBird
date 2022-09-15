@@ -29,8 +29,19 @@ class InputHandler {
                 this.keys.push("Click");
             }
         });
+
         this.game.canvas.addEventListener("mouseup", () => {
             this.keys.splice(this.keys.indexOf("Click", 1));
+        });
+
+        this.game.canvas.addEventListener("touchstart", () => {
+            if (this.keys.indexOf("Touch") === -1) {
+                this.keys.push("Touch");
+            }
+        });
+
+        this.game.canvas.addEventListener("touchend", () => {
+            this.keys.splice(this.keys.indexOf("Touch", 1));
         });
     }
 }
