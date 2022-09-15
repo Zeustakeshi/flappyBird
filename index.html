@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+        <title>flappyBird</title>
+    </head>
+    <body>
+        <style>
+            body {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #0f172a;
+            }
+            #canvas {
+                margin: 0 auto;
+                width: 288px;
+                height: 512px;
+                cursor: pointer;
+            }
+        </style>
+        <canvas id="canvas"></canvas>
+        <script src="./inputHandler.js"></script>
+        <script src="bg.js"></script>
+        <script src="./bird.js"></script>
+        <script src="pipe.js"></script>
+        <script src="score.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
