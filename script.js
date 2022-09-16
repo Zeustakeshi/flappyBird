@@ -111,10 +111,6 @@ class Game {
     }
 }
 
-window.addEventListener("load", () => {
-    const g = new Game();
-});
-
 class GameOver {
     constructor(game) {
         this.game = game;
@@ -153,6 +149,7 @@ class GameOver {
     onGameOver() {
         this.game.gameOver = true;
         this.game.pipes = [];
+        this.game.timer = 0;
         this.game.speed = this.game.deltaTime * 0.3;
         this.game.bird.y = this.game.canvasHeight / 2;
     }
@@ -193,3 +190,9 @@ class StartScreen {
         }
     }
 }
+
+
+window.addEventListener("load", () => {
+    const g = new Game();
+});
+
