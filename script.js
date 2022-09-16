@@ -150,6 +150,7 @@ class GameOver {
         this.game.gameOver = true;
         this.game.pipes = [];
         this.game.timer = 0;
+        this.game.bird.timer = 0;
         this.game.speed = this.game.deltaTime * 0.3;
         this.game.bird.y = this.game.canvasHeight / 2;
     }
